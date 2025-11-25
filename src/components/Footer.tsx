@@ -10,7 +10,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="RePaiRingWallaH Logo" className="w-12 h-12 object-contain" />
+              <div className="w-14 h-14 rounded-full bg-white p-1 flex items-center justify-center shadow-md">
+                <img src={logo} alt="RePaiRingWallaH Logo" className="w-full h-full object-cover rounded-full" />
+              </div>
               <div>
                 <h3 className="text-xl font-bold">RePaiRingWallaH</h3>
                 <p className="text-xs text-primary-foreground/70">Expert Service</p>
