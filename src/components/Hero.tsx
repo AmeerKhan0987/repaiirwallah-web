@@ -25,7 +25,9 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Professional AC Repair & Home Appliance Service in{" "}
+              <span className="text-orange-500">
+                Professional AC Repair & Home Appliance Service in
+              </span>{" "}
               <span className="text-transparent bg-clip-text gradient-accent">
                 Vile Parle East
               </span>
@@ -81,8 +83,6 @@ const Hero = () => {
               alt="Professional AC Repair Service" 
               className="relative z-10 w-full h-auto rounded-2xl shadow-2xl"
             />
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-cyan rounded-full opacity-30 blur-2xl animate-pulse" />
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-secondary opacity-30 blur-2xl animate-pulse" style={{ animationDelay: "1s" }} />
           </div>
         </div>
       </div>
