@@ -109,10 +109,10 @@ const Services = () => {
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-secondary text-sm font-semibold uppercase tracking-wider">Our Services</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
-            Complete Home Appliance Solutions
+            Our Services
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            From AC repairs to washing machines, we service all your home appliances with expertise and care.
+            From AC repair and AC service to washing machine repair, we service all your home appliances with expertise and care in Vile Parle East Mumbai.
           </p>
         </div>
         

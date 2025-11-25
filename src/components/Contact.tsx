@@ -38,10 +38,10 @@ const Contact = () => {
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-secondary text-sm font-semibold uppercase tracking-wider">Get In Touch</span>
           <h2 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
-            Book Your Service Today
+            Contact
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Fill out the form below or reach us directly via phone, email, or WhatsApp.
+            Fill out the form below or reach us directly via phone, email, or WhatsApp for AC repair service in Vile Parle East.
           </p>
         </div>
         
@@ -141,6 +141,22 @@ const Contact = () => {
                     Chat on WhatsApp
                   </Button>
                 </a>
+              </div>
+            </div>
+            
+            <div className="glass rounded-xl p-6">
+              <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
+              <div className="rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.4896891234567!2d72.8458!3d19.0968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA1JzQ4LjUiTiA3MsKwNTAnNDQuOSJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="RePaiRingWallaH Location - Pakhadi Cottage Shop 6 Nehru Road Vile Parle East Mumbai"
+                />
               </div>
             </div>
           </div>

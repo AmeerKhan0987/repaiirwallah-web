@@ -26,7 +26,7 @@ const Hero = () => {
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
               <span className="text-white">
-                Professional AC Repair & Home Appliance Service in
+                Professional AC Repair & Service in
               </span>{" "}
               <span className="text-orange-500">
                 Vile Parle East
@@ -34,8 +34,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground">
-              Fast, reliable, and affordable AC repair and home appliance services. 
-              Experienced technicians, transparent pricing, and 100% customer satisfaction guaranteed.
+              Looking for reliable AC repair in Vile Parle East? RePaiRingWallaH offers expert AC service, AC gas refilling, AC installation, and home appliance repair across Mumbai. We serve Vile Parle, Santacruz, Andheri, Bandra, and nearby areas with fast 24-48 hour service. Our certified technicians provide transparent pricing and 100% customer satisfaction. Call 8104609070 for same-day AC repair service near you.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
@@ -80,7 +79,7 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-accent opacity-20 blur-3xl rounded-full" />
             <img 
               src={heroAc} 
-              alt="Professional AC Repair Service" 
+              alt="Professional AC Repair and Service in Vile Parle East Mumbai - Expert AC Technician Installing Air Conditioner" 
               className="relative z-10 w-full h-auto rounded-2xl shadow-2xl"
             />
           </div>
