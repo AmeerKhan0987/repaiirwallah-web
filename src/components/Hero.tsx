@@ -28,7 +28,7 @@ const Hero = () => {
               <span className="text-orange-500">
                 Professional AC Repair & Home Appliance Service in
               </span>{" "}
-              <span className="text-transparent bg-clip-text gradient-accent">
+              <span className="text-foreground">
                 Vile Parle East
               </span>
             </h1>
