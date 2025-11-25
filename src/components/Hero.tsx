@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
             <div className="inline-block">
-              <span className="text-secondary text-sm font-semibold uppercase tracking-wider px-4 py-2 rounded-full glass">
+              <span className="text-orange-500 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-normal sm:tracking-wide md:tracking-wider px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded-full glass whitespace-nowrap">
                 ❄️ Professional AC & Appliance Service
               </span>
             </div>
