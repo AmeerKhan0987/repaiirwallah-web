@@ -25,10 +25,10 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              <span className="text-orange-500">
+              <span className="text-white">
                 Professional AC Repair & Home Appliance Service in
               </span>{" "}
-              <span className="text-foreground">
+              <span className="text-orange-500">
                 Vile Parle East
               </span>
             </h1>
