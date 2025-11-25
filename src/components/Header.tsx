@@ -32,7 +32,9 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="RePaiRingWallaH Logo" className="w-12 h-12 object-contain" />
+            <div className="w-14 h-14 rounded-full bg-white p-1 flex items-center justify-center shadow-md">
+              <img src={logo} alt="RePaiRingWallaH Logo" className="w-full h-full object-cover rounded-full" />
+            </div>
             <div>
               <h1 className="text-xl font-bold text-primary">RePaiRingWallaH</h1>
               <p className="text-xs text-muted-foreground">Expert AC & Appliance Service</p>
