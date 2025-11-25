@@ -33,7 +33,7 @@ const Location = () => {
             <div className="border-t border-border pt-6">
               <h3 className="font-semibold text-lg mb-3">Service Areas</h3>
               <div className="flex flex-wrap gap-2">
-                {["Vile Parle East", "Vile Parle West", "Santacruz East", "Andheri East", "Navpada", "Kurla"].map((area) => (
+                {["Vile Parle East", "Vile Parle West", "Santacruz East", "Santacruz West", "Andheri East", "Bandra West", "Khar West", "Marol", "Kalina", "Lokhandwala", "Navpada", "Kurla"].map((area) => (
                   <span key={area} className="px-3 py-1 bg-muted rounded-full text-sm text-muted-foreground">
                     {area}
                   </span>
