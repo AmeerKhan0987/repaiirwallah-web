@@ -33,7 +33,7 @@ const About = () => {
           <div className="space-y-6 animate-slide-in-left">
             <span className="text-secondary text-sm font-semibold uppercase tracking-wider">About Us</span>
             <h2 className="text-4xl md:text-5xl font-bold">
-              Your Trusted AC & Appliance Service Partner
+              Why Choose Us
             </h2>
             <p className="text-muted-foreground text-lg">
               At <span className="font-semibold text-foreground">RePaiRingWallaH</span>, we bring over a decade of experience in AC repair 
