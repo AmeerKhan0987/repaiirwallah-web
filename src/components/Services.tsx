@@ -9,64 +9,94 @@ import {
   MicrowaveIcon,
   AirVent,
   Tv,
-  Flame
+  Flame,
+  Snowflake,
+  Wind as Dryer,
+  UtensilsCrossed,
+  CookingPot,
+  Package
 } from "lucide-react";
 
 const services = [
   {
     icon: Wind,
-    title: "AC Repair",
-    description: "Expert repair for all AC brands and models with quick diagnosis and quality parts."
+    title: "AC Repair & Service",
+    description: "Expert AC repair service for all brands. Fast air conditioning repair near you."
   },
   {
     icon: Sparkles,
-    title: "AC Deep Cleaning",
-    description: "Thorough cleaning service to improve cooling efficiency and air quality."
+    title: "AC Deep Cleaning Service",
+    description: "Professional AC cleaning service to improve cooling efficiency and air quality."
   },
   {
     icon: Download,
     title: "AC Installation & Uninstallation",
-    description: "Professional installation and safe removal of AC units with proper care."
+    description: "Expert AC installation service and safe removal with proper care."
   },
   {
     icon: Droplets,
     title: "AC Gas Refilling",
-    description: "Certified gas refilling service for optimal cooling performance."
+    description: "Certified gas refilling service for optimal air conditioner performance."
   },
   {
     icon: FileCheck,
-    title: "Annual Maintenance Contract",
-    description: "Comprehensive AMC plans for hassle-free year-round maintenance."
+    title: "Annual Maintenance Contract (AMC)",
+    description: "Comprehensive AMC plans for hassle-free year-round AC service and maintenance."
   },
   {
     icon: RefrigeratorIcon,
     title: "Refrigerator Repair",
-    description: "Fast and reliable refrigerator repair for all cooling issues."
+    description: "Fast and reliable fridge repair service for all cooling issues and brands."
+  },
+  {
+    icon: Snowflake,
+    title: "Freezer Repair",
+    description: "Expert freezer repair service for all types of cooling units."
+  },
+  {
+    icon: Package,
+    title: "Mini Refrigerator Repair",
+    description: "Specialized mini fridge repair service for compact cooling units."
   },
   {
     icon: WashingMachine,
     title: "Washing Machine Repair",
-    description: "Complete washing machine repair for all brands and models."
+    description: "Complete washer repair service for all brands and models."
+  },
+  {
+    icon: Dryer,
+    title: "Dryer Repair",
+    description: "Professional dryer repair service with fast turnaround time."
   },
   {
     icon: MicrowaveIcon,
-    title: "Microwave Repair",
-    description: "Expert microwave oven repair with genuine parts replacement."
+    title: "Microwave Oven Repair",
+    description: "Expert microwave repair service with genuine parts replacement."
+  },
+  {
+    icon: CookingPot,
+    title: "Oven Repair",
+    description: "Complete oven repair service for all makes and models."
   },
   {
     icon: AirVent,
-    title: "Chimney Service",
-    description: "Professional chimney cleaning and repair for optimal performance."
+    title: "Chimney Service & Repair",
+    description: "Professional chimney cleaning and repair service in Mumbai for optimal performance."
+  },
+  {
+    icon: UtensilsCrossed,
+    title: "Dishwasher Repair",
+    description: "Expert dishwasher repair service for all brands and issues."
   },
   {
     icon: Tv,
     title: "TV Repair",
-    description: "Screen, sound, and component repair for all TV brands."
+    description: "Screen, sound, and component repair service for all TV brands."
   },
   {
     icon: Flame,
     title: "Geyser Repair",
-    description: "Quick water heater repair and element replacement service."
+    description: "Quick water heater and geyser repair service with element replacement."
   },
 ];
 
