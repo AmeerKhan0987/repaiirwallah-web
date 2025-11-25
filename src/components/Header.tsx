@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "@/components/ThemeToggle";
 import logo from "@/assets/logo.avif";
 
 const Header = () => {
@@ -57,6 +58,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
+            <ThemeToggle />
             <a href="tel:8104609070">
               <Button variant="outline" size="sm" className="gap-2">
                 <Phone className="w-4 h-4" />
@@ -95,6 +97,9 @@ const Header = () => {
                 Contact
               </button>
               <div className="flex flex-col gap-2 pt-2">
+                <div className="flex justify-center pb-2">
+                  <ThemeToggle />
+                </div>
                 <a href="tel:8104609070">
                   <Button variant="outline" size="sm" className="w-full gap-2">
                     <Phone className="w-4 h-4" />
