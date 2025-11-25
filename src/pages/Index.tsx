@@ -8,10 +8,12 @@ import Location from "@/components/Location";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import SplashCursor from "@/components/SplashCursor";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SplashCursor />
       <Header />
       <Hero />
       <Services />
