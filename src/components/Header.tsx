@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.avif";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,10 +31,8 @@ const Header = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">R</span>
-            </div>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="RePaiRingWallaH Logo" className="w-12 h-12 object-contain" />
             <div>
               <h1 className="text-xl font-bold text-primary">RePaiRingWallaH</h1>
               <p className="text-xs text-muted-foreground">Expert AC & Appliance Service</p>
