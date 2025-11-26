@@ -1,4 +1,7 @@
 import { Shield, Clock, Award, Users } from "lucide-react";
+import { useRef } from "react";
+import { ParticleCard } from "@/components/animations/ParticleCard";
+import { GlobalSpotlight } from "@/components/animations/GlobalSpotlight";
 
 const features = [
   {
@@ -24,9 +27,12 @@ const features = [
 ];
 
 const About = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  
   return (
-    <section id="about" className="py-20 bg-background relative overflow-hidden">
+    <section id="about" ref={sectionRef} className="py-20 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(37,99,235,0.05),transparent_50%)]" />
+      <GlobalSpotlight sectionRef={sectionRef} />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -51,17 +57,17 @@ const About = () => {
             {features.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <div
+                <ParticleCard
                   key={index}
-                  className="glass rounded-xl p-6 hover:scale-105 transition-all duration-300"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  className="glass rounded-xl p-6 transition-all duration-300 border-glow-card"
+                  particleCount={6}
                 >
                   <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center mb-3">
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="font-semibold mb-2 text-foreground">{feature.title}</h3>
                   <p className="text-sm text-muted-foreground">{feature.description}</p>
-                </div>
+                </ParticleCard>
               );
             })}
           </div>
