@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Phone, Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
+import GooeyNav from "@/components/GooeyNav";
 import logo from "@/assets/logo.avif";
 
 const Header = () => {
@@ -24,6 +25,18 @@ const Header = () => {
     }
   };
 
+  const navItems = [
+    { label: "Services", href: "#services" },
+    { label: "About", href: "#about" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Contact", href: "#contact" },
+  ];
+
+  const handleNavigation = (href: string) => {
+    const id = href.replace('#', '');
+    scrollToSection(id);
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -42,20 +55,19 @@ const Header = () => {
             </div>
           </div>
 
-          <nav className="hidden md:flex items-center gap-6">
-            <button onClick={() => scrollToSection("services")} className="text-foreground hover:text-secondary transition-colors">
-              Services
-            </button>
-            <button onClick={() => scrollToSection("about")} className="text-foreground hover:text-secondary transition-colors">
-              About
-            </button>
-            <button onClick={() => scrollToSection("testimonials")} className="text-foreground hover:text-secondary transition-colors">
-              Testimonials
-            </button>
-            <button onClick={() => scrollToSection("contact")} className="text-foreground hover:text-secondary transition-colors">
-              Contact
-            </button>
-          </nav>
+          <div className="hidden md:flex items-center">
+            <GooeyNav
+              items={navItems}
+              particleCount={15}
+              particleDistances={[90, 10]}
+              particleR={100}
+              initialActiveIndex={0}
+              animationTime={600}
+              timeVariance={300}
+              colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+              onNavigate={handleNavigation}
+            />
+          </div>
 
           <div className="hidden md:flex items-center gap-3">
             <ThemeToggle />
