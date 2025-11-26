@@ -1,4 +1,7 @@
 import { Star } from "lucide-react";
+import { useRef } from "react";
+import { ParticleCard } from "@/components/animations/ParticleCard";
+import { GlobalSpotlight } from "@/components/animations/GlobalSpotlight";
 
 const testimonials = [
   {
@@ -28,9 +31,12 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  
   return (
-    <section id="testimonials" className="py-20 bg-muted/50 relative overflow-hidden">
+    <section id="testimonials" ref={sectionRef} className="py-20 bg-muted/50 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,rgba(0,217,255,0.05),transparent_50%)]" />
+      <GlobalSpotlight sectionRef={sectionRef} />
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
@@ -45,10 +51,10 @@ const Testimonials = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {testimonials.map((testimonial, index) => (
-            <div
+            <ParticleCard
               key={index}
-              className="glass rounded-xl p-6 hover:scale-105 transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="glass rounded-xl p-6 transition-all duration-300 animate-fade-in border-glow-card"
+              particleCount={8}
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
@@ -60,7 +66,7 @@ const Testimonials = () => {
                 <div className="font-semibold text-foreground">{testimonial.name}</div>
                 <div className="text-sm text-muted-foreground">{testimonial.location}</div>
               </div>
-            </div>
+            </ParticleCard>
           ))}
         </div>
       </div>

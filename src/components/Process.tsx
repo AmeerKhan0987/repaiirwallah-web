@@ -1,4 +1,7 @@
 import { Search, Wrench, CheckCircle, Handshake } from "lucide-react";
+import { useRef } from "react";
+import { ParticleCard } from "@/components/animations/ParticleCard";
+import { GlobalSpotlight } from "@/components/animations/GlobalSpotlight";
 
 const steps = [
   {
@@ -24,8 +27,12 @@ const steps = [
 ];
 
 const Process = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  
   return (
-    <section className="py-20 bg-background">
+    <section ref={sectionRef} className="py-20 bg-background">
+      <GlobalSpotlight sectionRef={sectionRef} />
+      
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <span className="text-secondary text-sm font-semibold uppercase tracking-wider">Our Process</span>
@@ -41,23 +48,23 @@ const Process = () => {
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
-              <div
+              <ParticleCard
                 key={index}
-                className="relative animate-fade-in"
-                style={{ animationDelay: `${index * 0.15}s` }}
+                className="relative animate-fade-in border-glow-card"
+                particleCount={10}
               >
                 {index < steps.length - 1 && (
                   <div className="hidden md:block absolute top-12 left-[60%] w-[80%] h-0.5 bg-gradient-to-r from-secondary to-transparent" />
                 )}
                 <div className="text-center">
-                  <div className="w-24 h-24 mx-auto bg-gradient-accent rounded-2xl flex items-center justify-center mb-4 shadow-glow hover:scale-110 transition-transform">
+                  <div className="w-24 h-24 mx-auto bg-gradient-accent rounded-2xl flex items-center justify-center mb-4 shadow-glow transition-transform">
                     <Icon className="w-12 h-12 text-white" />
                   </div>
                   <div className="text-secondary text-sm font-semibold mb-2">Step {index + 1}</div>
                   <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                   <p className="text-muted-foreground text-sm">{step.description}</p>
                 </div>
-              </div>
+              </ParticleCard>
             );
           })}
         </div>

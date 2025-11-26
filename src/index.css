@@ -140,6 +140,60 @@ All colors MUST be HSL.
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
+
+  /* Border glow effect for cards */
+  .border-glow-card {
+    --glow-x: 50%;
+    --glow-y: 50%;
+    --glow-intensity: 0;
+    --glow-radius: 200px;
+    position: relative;
+  }
+
+  .border-glow-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    background: radial-gradient(
+      var(--glow-radius) circle at var(--glow-x) var(--glow-y),
+      hsl(var(--secondary) / calc(var(--glow-intensity) * 0.8)) 0%,
+      hsl(var(--secondary) / calc(var(--glow-intensity) * 0.4)) 30%,
+      transparent 60%
+    );
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: subtract;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  /* Particle styles */
+  .particle-container {
+    transform-style: preserve-3d;
+  }
+
+  .particle::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: hsl(var(--secondary) / 0.2);
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  /* Global spotlight */
+  .global-spotlight {
+    mix-blend-mode: screen;
+    will-change: transform, opacity;
+    pointer-events: none;
+  }
   
   .animate-float {
     animation: float 3s ease-in-out infinite;
