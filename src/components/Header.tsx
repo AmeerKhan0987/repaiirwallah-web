@@ -3,7 +3,7 @@ import { Phone, Mail, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
 import GooeyNav from "@/components/GooeyNav";
-import logo from "@/assets/logo.avif";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
