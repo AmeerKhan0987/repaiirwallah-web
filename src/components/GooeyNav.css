@@ -130,7 +130,8 @@
   position: absolute;
   inset: -75px;
   z-index: -2;
-  background: hsl(var(--background));
+  background: transparent;
+  display: none;
 }
 
 .gooey-nav-container .effect.filter::after {
